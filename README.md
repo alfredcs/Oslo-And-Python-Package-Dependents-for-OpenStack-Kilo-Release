@@ -15,26 +15,28 @@ The POC started on Kilo-3 release and will be upgraded to 2015.1 when it becomes
     Keystone
 
         keystone-2015.1.0b3-1.noarch
-
         python-keystoneclient-1.2.0.post10-1.noarch
+        
     Glance
 
         python-glanceclient-0.17.0-1.noarch
-
         glance-2015.1.0b3-1.noarch
+        
     Nova
 
         nova-2015.1.0b3-1.noarch
-
         python-novaclient-2.22.0.post11-1.noarch
+        
     Horizon
         horizon-2015.1.0b3-1.noarch
+        
     Neutron
 
         python-neutronclient-2.4.0-1.noarch
-
         neutron-2015.1.0rc1-1.noarch
+        
     Heat
+
 
 Oslo Dependencies
 
@@ -64,6 +66,7 @@ Oslo is the code name for the general purpose OpenStack Python libraries. Those 
 
     oslo.serialization-1.4.0-1.noarch
 
+
 Other Dependencies
 
 Following components are required in order to initiate and run Kilo code, beside the Oslo dependencies listed above.
@@ -80,37 +83,25 @@ Following components are required in order to initiate and run Kilo code, beside
         sqlparse
         python-memcached
         keystonemiddleware
+        
     Glance:
         Rabbitmq-Server
             Erlang
-
         retrying
-
         WSME
-
         ipaddr
-
         simplegeneric
-
         osprofiler
-
         enum34
-
         httplib2
-
         utils
-
         suds
-
         python-cinderclient
-
         glance_store
-
         python_swiftclient
-
         keystonemiddleware
-
         pycrypto
+        
     Nova
         python-lxml
         rfc3986
@@ -122,10 +113,12 @@ Following components are required in order to initiate and run Kilo code, beside
         gnutls-utils
         kombu
         MarkupSafe
+        
     Horizon
         httpd
         mod_wsgi
         mod_ssl
+        
     Neutron
 
 
