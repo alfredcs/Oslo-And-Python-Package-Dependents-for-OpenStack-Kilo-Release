@@ -120,6 +120,25 @@ Following components are required in order to initiate and run Kilo code, beside
         kombu
         MarkupSafe
         eventlet
+        greenlet
+        netaddr
+        iso8601
+        stevendore
+        python-keystoneclient
+        pbr
+        WebOb
+        netifaces
+        python-lxml
+        retrying
+        python-paste
+        deploy
+        python-paste-deploy
+        Routes
+        repoze.lru
+        python-glanceclient
+        jsonschema
+        SQLAlchemy
+        python-cinderclient
         
     Horizon
         httpd
