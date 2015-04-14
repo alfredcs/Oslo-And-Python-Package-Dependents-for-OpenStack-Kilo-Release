@@ -1,12 +1,18 @@
 # Oslo-And-Python-Package-Dependents-for-OpenStack-Kilo-Release
 The page lists all Oslo and Python packages dependents needed to build and run OpenStack Kilo release.
 
+The latest OpenStack code Kilo has been scheduled for the late April release this year. Development during this cycle has been focused on making OpenStack rock solid, but there are some new features to keep in mind.
 
+    Improvements to the upgradability of multiple projects through database changes and objectification
+    More support for Non-Uniform Memory Access (NUMA) in Nova, enabling better memory management and performance
+    Better Neutron network reliability and improved network traffic performance within a cloud with MTU advertisement functionality
+    High Availability improvements through heartbeat monitoring in Oslo, OpenStack's common function library
+    Incremental backups in Cinder
+    Federated user mapping in Keystone, making it easier to manage identities in hybrid environments
+    The ability for Heat to automatically recover from many different types of failures in the environment
+    New metrics and storage methods in Ceilometer
 
-Prior to OpenStack Kilo release, Nova driver for Docker ( i.e. nova-docker) is the primary  integration method to deploy Docker on OpenStack environment. Docker images are stored in Glance and docker format and containers are created using Nova CLI or API. Vendors such as OpneContrail and PlumGrid provided simple plug-in to Docker to interact with Neutron.
-
- Kilo release has substantial improvements in Docker integration which include Cinder support, security groups for containers, docker-py and privileged containers. Nova-docker is still the primary deployment method however many bug fixed have been introduced in Kilo to make OpenStack-Docker integration less problematic and therefor more stable.
-
+Nova driver for Docker ( i.e. nova-docker) is still the primary integration method to deploy Docker on OpenStack environment however many bug fixed have been introduced in Kilo to make OpenStack-Docker integration less problematic and more stable. Like prior releases, Docker images are stored in Glance and docker format and containers are created using Nova CLI or API. Vendors such as OpneContrail and PlumGrid provided simple plug-in to Docker to interact with Neutron. Kilo release has substantial improvements in Docker integration which include Cinder support, security groups for containers, docker-py and privileged containers.      
        
 Kilo Code Release and RPMs
 
@@ -120,5 +126,6 @@ Following components are required in order to initiate and run Kilo code, beside
         mod_ssl
         
     Neutron
-
+        alembic : A database migration tool for SQLAlchemy.
+        Mako:
 
