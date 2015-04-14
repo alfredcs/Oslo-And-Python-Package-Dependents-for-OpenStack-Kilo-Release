@@ -119,6 +119,7 @@ Following components are required in order to initiate and run Kilo code, beside
         gnutls-utils
         kombu
         MarkupSafe
+        eventlet
         
     Horizon
         httpd
