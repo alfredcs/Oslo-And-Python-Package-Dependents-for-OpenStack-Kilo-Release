@@ -48,29 +48,20 @@ Oslo Dependencies
 
 Oslo is the code name for the general purpose OpenStack Python libraries. Those common libraries are shared among different OpenStack projects to provide a standard code reference and review process. Kilo code depends on following libraries.
 
-    oslo.vmware-0.11.1-1.noarch
-
-    oslo.db-1.7.1-1.noarch:
-
-    oslo.middleware-1.0.0-1.noarch
-
-    oslo.concurrency-1.8.0-1.noarch
-
-    oslo.context-0.2.0-1.noarch
-
-    oslo.i18n-1.5.0-1.noarch
-
-    oslo.messaging-1.8.0-1.noarch
-
-    oslo.policy-0.3.1-1.noarch
-
-    oslo.utils-1.4.0-1.noarch
-
-    oslo.config-1.9.3-1.noarch
-
-    oslo.log-1.0.0-1.noarch
-
-    oslo.serialization-1.4.0-1.noarch
+    oslo.vmware-0.11.1-1.noarch or newer
+    oslo.db-1.7.1-1.noarch  or newer
+    oslo.middleware-1.0.0-1.noarch or newer
+    oslo.concurrency-1.8.0-1.noarch or newer
+    oslo.context-0.2.0-1.noarch or newer
+    oslo.i18n-1.5.0-1.noarch or newer
+    oslo.messaging-1.8.0-1.noarch or newer
+    oslo.policy-0.3.1-1.noarch or newer
+    oslo.utils-1.4.0-1.noarch or newer
+    oslo.config-1.9.3-1.noarch or newer
+    oslo.log-1.0.0-1.noarch or newer
+    oslo.serialization-1.4.0-1.noarch or newer
+    oslo.rootwrap-1.6.0-1.noarch or newer
+    
 
 
 Other Dependencies
@@ -147,6 +138,7 @@ Following components are required in order to initiate and run Kilo code, beside
         
     Neutron
         alembic : A database migration tool for SQLAlchemy.
-        Mako:
-        tablib: format-agnostic tabular dataset library for neutronclient
+        Mako: A super-fast templating language that borrows the  best ideas from the existing templating languages.
+        tablib: A format-agnostic tabular dataset library for neutronclient.
+        httplib2: HTTP client library.
 
